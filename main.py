@@ -357,5 +357,5 @@ if __name__ == "__main__":
     print('Available memory % :', psutil.virtual_memory()[1])
     print('Percentage of memory % used:', psutil.virtual_memory()[2])
     print('Memory % used:', psutil.virtual_memory()[3])
-    print(' Free memory % used:', psutil.virtual_memory()[4])
+    print('Free memory % used:', psutil.virtual_memory()[4])
                  
