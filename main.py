@@ -353,5 +353,9 @@ if __name__ == "__main__":
                     print(last_block)
                 
                 write_last_block(output_fd, decoded, nb_remaining_symbols, word_size, true_length_last_symbol)
+    print('Memory % used:', psutil.virtual_memory()[0])
+    print('Memory % used:', psutil.virtual_memory()[1])
+    print('Memory % used:', psutil.virtual_memory()[2])
     print('Memory % used:', psutil.virtual_memory()[3])
+    print('Memory % used:', psutil.virtual_memory()[4])
                  
