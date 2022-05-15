@@ -12,6 +12,7 @@ import math
 import argparse
 import sys
 import os
+import psutil
 
 from gf256_tables import gf256_mul_table, gf256_inv_table
 from utils import gf_256_full_add_vector, gf_256_mul_vector, gf_256_inv_vector
@@ -352,3 +353,5 @@ if __name__ == "__main__":
                     print(last_block)
                 
                 write_last_block(output_fd, decoded, nb_remaining_symbols, word_size, true_length_last_symbol)
+    print('Memory % used:', psutil.virtual_memory()[3])
+                 
